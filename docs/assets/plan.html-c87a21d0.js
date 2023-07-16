@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-790e9c77","path":"/plan.html","title":"Output Plan schema","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"Supported types of items in Plan","slug":"supported-types-of-items-in-plan","link":"#supported-types-of-items-in-plan","children":[]}],"git":{},"filePathRelative":"plan.md"}');export{e as data};
