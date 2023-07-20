@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4bc4818a","path":"/editor/filehistory.html","title":"File history in PowerDocs","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"See changes in the editor","slug":"see-changes-in-the-editor","link":"#see-changes-in-the-editor","children":[]}],"git":{},"filePathRelative":"editor/filehistory.md"}');export{e as data};
