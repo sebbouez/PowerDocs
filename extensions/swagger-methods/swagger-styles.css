@@ -1,0 +1,118 @@
+
+.swagger-method {
+    font-family: consolas;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 6px;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    font-weight: 600;
+}
+
+    .swagger-method p {
+        margin: 0px;
+    }
+
+    .swagger-method .leftPart {
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+
+    .swagger-method .rightPart {
+        margin-left: 6px;
+        padding: 3px;
+        font-family: Consolas;
+        font-size: 16px;
+    }
+
+
+/* POST */
+
+.http-method-POST {
+    border: 2px solid #49cc90;
+    background: rgba(73,204,144,.1);
+}
+
+    .http-method-POST .leftPart {
+        background: #49cc90;
+        color: #fff;
+    }
+
+
+/* GET */
+
+.http-method-GET {
+    border: 2px solid #61affe;
+    background: rgba(97,175,254,.1);
+}
+
+    .http-method-GET .leftPart {
+        background: #61affe;
+        color: #fff;
+    }
+
+
+/* PUT */
+
+.http-method-PUT {
+    border: 2px solid #FCA130;
+    background: rgba(252,161,48,.1);
+}
+
+    .http-method-PUT .leftPart {
+        background: #FCA130;
+        color: #fff;
+    }
+
+
+/* DELETE */
+
+.http-method-DELETE {
+    border: 2px solid #F93E3E;
+    background: rgba(249,62,62,.1);
+}
+
+    .http-method-DELETE .leftPart {
+        background: #F93E3E;
+        color: #fff;
+    }
+
+
+/* OPTIONS */
+
+.http-method-OPTIONS {
+    border: 2px solid #0D5AA7;
+    background: rgba(13,90,167,.1);
+}
+
+    .http-method-OPTIONS .leftPart {
+        background: #0D5AA7;
+        color: #fff;
+    }
+
+
+/* PATCH */
+
+.http-method-PATCH {
+    border: 2px solid #50E3C2;
+    background: rgba(80,227,194,.1);
+}
+
+    .http-method-PATCH .leftPart {
+        background: #50E3C2;
+        color: #fff;
+    }
+
+
+/* HEAD */
+
+.http-method-HEAD {
+    border: 2px solid #9012FE;
+    background: rgba(144,18,254,.1);
+}
+
+    .http-method-HEAD .leftPart {
+        background: #9012FE;
+        color: #fff;
+    }
