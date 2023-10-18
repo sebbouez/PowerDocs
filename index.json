@@ -1,0 +1,22 @@
+{
+  "extensions": [
+    {
+      "name": "dico-fr",
+      "versions": [
+        "1.0"
+      ]
+    },
+    {
+      "name": "dico-en",
+      "versions": [
+        "1.0"
+      ]
+    },
+    {
+      "name": "swagger-methods",
+      "versions": [
+        "1.0"
+      ]
+    }
+  ]
+}
