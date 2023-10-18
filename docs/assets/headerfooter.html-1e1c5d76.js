@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-c373938a","path":"/pdf/headerfooter.html","title":"Customize document Headers and Footers","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"pdf/headerfooter.md"}');export{e as data};
