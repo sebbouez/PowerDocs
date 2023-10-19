@@ -2,18 +2,21 @@
   "extensions": [
     {
       "name": "dico-fr",
+      "description": "French dictionary",
       "versions": [
         "1.0"
       ]
     },
     {
       "name": "dico-en",
+      "description": "English dictionary",
       "versions": [
         "1.0"
       ]
     },
     {
       "name": "swagger-methods",
+      "description": "Custom markdown renderer for http methods using Swagger style",
       "versions": [
         "1.0"
       ]
