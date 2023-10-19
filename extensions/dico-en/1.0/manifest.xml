@@ -1,10 +1,15 @@
 <PowerDocsExtension>
 
-<Metadata>
-	<Version>1.0</Version>
-	<Author>SB</Author>
-</Metadata>
+    <Metadata>
+        <Version>1.0</Version>
+        <Author>SB</Author>
+    </Metadata>
 
-   
+    <Files>
+        <File name="index.aff"/>
+        <File name="index.dic"/>
+        <File name="main.js"/>
+        <File name="thes.dat"/>
+    </Files>
 
 </PowerDocsExtension>
