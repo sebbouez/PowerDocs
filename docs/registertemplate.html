@@ -1,0 +1,45 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="soft" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-04-08T11:54:19.1159272"><title>registerTemplate Method | PowerDocs online help</title><script type="application/json" id="virtual-toc-data">[{"id":"parameters","level":0,"title":"Parameters","anchor":"#parameters"},{"id":"examples","level":0,"title":"Examples","anchor":"#examples"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="registerTemplate Method | PowerDocs online help"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="PowerDocs online help Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/registertemplate.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="registerTemplate Method | PowerDocs online help"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/registertemplate.html#webpage",
+    "url": "writerside-documentation/registertemplate.html",
+    "name": "registerTemplate Method | PowerDocs online help",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "PowerDocs online help Help"
+}</script><!-- End Schema.org --></head><body data-id="registerTemplate" data-main-title="registerTemplate Method" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Create extensions for PowerDocs///API Reference"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>PowerDocs online help  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="registerTemplate" id="registerTemplate.md">registerTemplate Method</h1><p id="-lsctt2_2">This method is used to register a piece of content that can be included easily using the CTRL+SPACE keys.</p><section class="chapter"><h2 id="parameters" data-toc="parameters">Parameters</h2><ul class="list _bullet" id="-lsctt2_3"><li class="list__item" id="-lsctt2_4"><p><code class="code" id="-lsctt2_5">string</code>: The name of the template</p></li><li class="list__item" id="-lsctt2_6"><p><code class="code" id="-lsctt2_7">string</code>: A description of the template</p></li><li class="list__item" id="-lsctt2_8"><p><code class="code" id="-lsctt2_9">function</code>: The function to be called to generate the template, it must return a <code class="code" id="-lsctt2_10">string</code></p></li></ul></section><section class="chapter"><h2 id="examples" data-toc="examples">Examples</h2><div class="code-block" data-lang="javascript">
+
+import {PowerDocsExtension} from &quot;PowerDocs.Lib&quot;;
+
+var ext = PowerDocsExtension.create();
+
+function returnCustomTemplate() {
+
+    let mardkDown = &quot;# XXX class\r&quot;;
+    mardkDown += &quot;The XXX class is used to...\r&quot;;
+    mardkDown += &quot;\r&quot;;
+    mardkDown += &quot;## Properties\r&quot;;
+    mardkDown += &quot;\r&quot;;
+    mardkDown += &quot;## Methods\r&quot;;
+    mardkDown += &quot;\r&quot;;
+    mardkDown += &quot;### Method1()\r&quot;;
+    mardkDown += &quot;This method is used to...\r&quot;;
+    mardkDown += &quot;\r&quot;;
+    mardkDown += &quot;#### Arguments\r&quot;;
+    mardkDown += &quot;* `type` argument: This argument is used to...&quot;;
+    mardkDown += &quot;\r&quot;;
+    mardkDown += &quot;\r&quot;;
+    mardkDown += &quot;## Events\r&quot;;
+    return mardkDown;
+
+}
+
+ext.registerTemplate(&quot;Class docs&quot;, &quot;MS Style C# class documentation&quot;, returnCustomTemplate);
+
+</div></section><div class="last-modified">Last modified: 08 avril 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="registerstylesheet.html" class="navigation-links__prev">registerStyleSheet Method</a><a href="debug-static-class.html" class="navigation-links__next">debug Static class</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.js"></script></body></html>

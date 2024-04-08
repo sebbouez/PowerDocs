@@ -1,0 +1,29 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="soft" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-04-08T11:54:19.1082588"><title>Getting started | PowerDocs online help</title><script type="application/json" id="virtual-toc-data">[{"id":"your-first-extension","level":0,"title":"Your first extension","anchor":"#your-first-extension"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Getting started | PowerDocs online help"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="PowerDocs online help Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/getting-started.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Getting started | PowerDocs online help"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/getting-started.html#webpage",
+    "url": "writerside-documentation/getting-started.html",
+    "name": "Getting started | PowerDocs online help",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "PowerDocs online help Help"
+}</script><!-- End Schema.org --></head><body data-id="Getting-started" data-main-title="Getting started" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Create extensions for PowerDocs"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>PowerDocs online help  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Getting-started" id="Getting-started.md">Getting started</h1><p id="-rzsu5c_2">To create an extension, you need the following elements:</p><ul class="list _bullet" id="-rzsu5c_3"><li class="list__item" id="-rzsu5c_4"><p>JavaScript/TypeScript IDE like Visual Studio Code</p></li><li class="list__item" id="-rzsu5c_5"><p>PowerDocs installed</p></li></ul><section class="chapter"><h2 id="your-first-extension" data-toc="your-first-extension">Your first extension</h2><div class="micro-format" data-content="{&quot;microFormat&quot;:[&quot;\u003cp id\u003d\&quot;-rzsu5c_23\&quot;\u003eIt is important to respect the name of default files. \u0026quot;manifest.xml\u0026quot; and \u0026quot;main.js\u0026quot; are required to make your extension work properly.\u003c/p\u003e&quot;]}"></div><ol class="list _decimal" id="-rzsu5c_7" type="1"><li class="list__item" id="-rzsu5c_8"><p>Start by creating a folder in the <code class="code" id="-rzsu5c_9">%USERPROFILE%\AppData\Local\PowerDocs\extensions\</code> existing folder, for example MyExtension</p></li><li class="list__item" id="-rzsu5c_10"><p>Create a file in this folder, called <code class="code" id="-rzsu5c_11">manifest.xml</code></p></li><li class="list__item" id="-rzsu5c_12"><p>Create a file in this folder, called <code class="code" id="-rzsu5c_13">main.js</code></p></li><li class="list__item" id="-rzsu5c_14"><p>Open the <code class="code" id="-rzsu5c_15">main.js</code> file in your favorite IDE and start typing code</p></li></ol><p id="-rzsu5c_16">You must import the PowerDocsExtension class from the PowerDocs.Lib module like this:</p><div class="code-block" data-lang="javascript">
+import {PowerDocsExtension} from 'PowerDocs.Lib';
+...
+</div><p id="-rzsu5c_18">Then you can instantiate your extension like this:</p><div class="code-block" data-lang="javascript">
+...
+// instanciates the extension object
+var myExtensionInstance = PowerDocsExtension.create();
+...
+</div><p id="-rzsu5c_20">Then, depending on your extension purpose, you can listen to some events, like that:</p><div class="code-block" data-lang="javascript">
+...
+// listen to the &quot;documentLoaded&quot; event, which happens every time the editor loads a file
+myExtensionInstance.addListener(&quot;documentLoaded&quot;, (d) =&gt; { ... });
+...
+</div></section><div class="last-modified">Last modified: 08 avril 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="application-settings.html" class="navigation-links__prev">Application Settings</a><a href="get-started.html" class="navigation-links__next">Writing a manifest file</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.js"></script></body></html>
